@@ -1,7 +1,1 @@
-module Noah
-  module Agents
-    module Dummy2
-      # Some code here
-    end
-  end
-end
+require File.join(File.dirname(__FILE__), 'noah','agents','dummy2')
