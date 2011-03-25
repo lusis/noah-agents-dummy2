@@ -1,7 +1,7 @@
 module Noah
-  module Agent
+  module Agents
     module Dummy2
-      # Your code goes here...
+      VERSION = "0.0.1"
     end
   end
 end
