@@ -1,19 +1,15 @@
 require 'noah/agents/base_agent'
 
 module Noah::Agents
-  class Dummy2Agent
-    include Noah::Agents::Base
+  class Dummy2Agent < Base
 
     PREFIX = "dummy2://"
     NAME = self.name
+    DEFAULT_CONCURRENCY = 100
 
-    def self.callback!(matches, message)
-      EM::Iterator.new(matches).each do |watch, iter|
-        p, ep = watch.split("|")
-        logger.info("Sending message to: #{ep} for pattern: #{p}")
-        logger.debug("message received: #{message}")
-        iter.next
-      end
+    def work!(matches, message)
+      logger.info("Sending message to (#{ep})")
+      logger.debug("Dummy2 message received: #{message}")
     end
 
   end

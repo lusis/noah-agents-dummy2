@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "noah-agents-dummy2"
-  s.version     = "0.0.1"
+  s.version     = "0.0.4"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["John E. Vincent"]
   s.email       = ["lusis.org+rubygems.org@gmail.com"]
